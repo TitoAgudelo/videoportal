@@ -12,8 +12,10 @@
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^3.0.0",
     "mongoose": "^4.4.20",
     "morgan": "^1.7.0",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "webpack": "^3.4.1"
   }
 }

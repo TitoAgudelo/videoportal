@@ -1,0 +1,23 @@
+<section id="videos-view" class="mainbar">
+  <div>
+    <div class="container">
+        <div class="video-content">
+            <div ng-repeat="video in vm.videos" class="col-thirds">
+                <div class="video-wrapper">
+                    <video class="video-listing" width="290" height="200" controls>
+                      <source src="{{video.url}}" type="video/mp4">
+                    </video>
+                    <h4 class="video-title"><a href="#" ng-click="vm.goToVideoDetail(video._id)">{{video.name}}</a></h4>
+                    <div class="video-rating">
+                    <b>Rate Now:</b> <span uib-rating ng-model="video.average" max="5" read-only="0" on-hover="vm.hoveringOver(value)"  titles="['one','two','three','four','five']" aria-labelledby="default-rating" ng-click="vm.rateVideo(video)"></span></div>
+                    <div class="description-content">
+                      <p class="video-description">{{video.description}}</p>
+                    </div>
+                    <br/>
+                </div>
+            </div>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -121,7 +121,8 @@
         $rootScope.isShellPage = function () {
           return $location.path() == '/videos'
           || $location.path() == '/page-not-found'
-          || $location.path() == '/authcomplete';
+          || $location.path() == '/authcomplete'
+          || $location.path() == '/video/';
         }
 
         $rootScope.isNotShellPage = function () {

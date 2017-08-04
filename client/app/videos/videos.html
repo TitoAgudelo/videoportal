@@ -5,7 +5,7 @@
         <div ng-repeat="video in vm.videos" class="col-thirds">
           <div class="video-wrapper" angular-lazy-load>
             <video class="video-listing" width="290" height="200" controls>
-              <source src="{{video.url}}" type="video/mp4">
+              <source src="{{video.url}}" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
             </video>
             <h4 class="video-title"><a href="#" ng-click="vm.goToVideoDetail(video._id)">{{video.name}}</a></h4>
             <div class="video-rating">

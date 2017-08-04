@@ -67,6 +67,16 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+angular-lazy-load@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/angular-lazy-load/-/angular-lazy-load-1.1.1.tgz#13fafd98c8350bfa5b3f9b6993c463a6a28e0f6a"
+  dependencies:
+    angular "^1.6.4"
+
+angular-lazy-loader@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/angular-lazy-loader/-/angular-lazy-loader-2.1.0.tgz#ded334994b5e316a53a6fd1411ddf942eb0e8b3f"
+
 angular-mocks@^1.5.0:
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/angular-mocks/-/angular-mocks-1.6.5.tgz#c62f8014cc6d3ed3fd1b383a634ca0009af3efee"
@@ -75,7 +85,7 @@ angular-ui-bootstrap@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/angular-ui-bootstrap/-/angular-ui-bootstrap-2.5.0.tgz#2facefb915386655dc5f44150258032517236d01"
 
-angular@^1.6.5:
+angular@^1.6.4, angular@^1.6.5:
   version "1.6.5"
   resolved "https://registry.yarnpkg.com/angular/-/angular-1.6.5.tgz#37f788eebec5ce2e3fa02b17bbcb2a231576a0d6"
 

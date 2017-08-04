@@ -7,6 +7,6 @@
       'blocks.exception', 'blocks.logger', 'blocks.router', 'blocks.settings',
       'ui.router', 'ngplus', 'LocalStorageModule',
       'colorpicker.module', 'ngFileUpload', 'ui.bootstrap',
-      'ngclipboard', 'angularMoment', 'angular-confirm', 'angular-md5'
+      'ngclipboard', 'angularMoment', 'angular-confirm', 'angular-md5', 'angular-lazy-loader'
     ]);
 })();

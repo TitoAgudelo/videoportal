@@ -2,7 +2,9 @@
   "name": "CrossoverVideosAssignment",
   "version": "1.0.0",
   "description": "CrossoverVideosAssignment",
-  "authors": ["Tito Agudelo"],
+  "authors": [
+    "Tito Agudelo"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",
@@ -42,7 +44,8 @@
     "ngclipboard": "^1.1.1",
     "d3": "3.5.10",
     "angular-confirm-modal": "^1.2.5",
-    "angular-md5": "^0.1.10"
+    "angular-md5": "^0.1.10",
+    "ngInfiniteScroll": "1.0.0"
   },
   "resolutions": {
     "angular": "1.5.8",

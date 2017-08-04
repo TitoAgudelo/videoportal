@@ -2,7 +2,9 @@
   "name": "CrossoverVideosAssignment",
   "version": "1.0.0",
   "description": "CrossoverVideosAssignment",
-  "authors": ["Tito Agudelo"],
+  "authors": [
+    "Tito Agudelo"
+  ],
   "license": "MIT",
   "ignore": [
     "**/.*",

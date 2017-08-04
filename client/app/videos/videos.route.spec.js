@@ -12,20 +12,18 @@ describe('videos routes', function() {
       $templateCache.put(view, '');
     });
 
-    bard.verifyNoOutstandingHttpRequests();
+    it('should map state videos to url /videos ', function() {
+      expect($state.href('videos', {})).to.equal('/videos');
+    });
 
-    // it('should map state dashboard to url / ', function() {
-    //   expect($state.href('dashboard', {})).to.equal('/dashboard');
-    // });
+    it('should map /videos route to videos View template', function() {
+      expect($state.get('videos').templateUrl).to.equal(view);
+    });
 
-    // it('should map /dashboard route to dashboard View template', function() {
-    //   expect($state.get('dashboard').templateUrl).to.equal(view);
-    // });
-
-    // it('of dashboard should work with $state.go', function() {
-    //   $state.go('dashboard');
-    //   $rootScope.$apply();
-    //   expect($state.is('dashboard'));
-    // });
+    it('of admin should work with $state.go', function() {
+      $state.go('videos');
+      $rootScope.$apply();
+      expect($state.is('videos'));
+    });
   });
 });

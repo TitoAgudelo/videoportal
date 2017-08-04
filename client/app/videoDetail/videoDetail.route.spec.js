@@ -1,5 +1,5 @@
 /* jshint -W117, -W030 */
-describe('video route', function() {
+describe('video routes', function() {
   describe('state', function() {
     var view = 'app/videoDetail/videoDetail.html';
 
@@ -12,20 +12,18 @@ describe('video route', function() {
       $templateCache.put(view, '');
     });
 
-    bard.verifyNoOutstandingHttpRequests();
+    it('should map state video to url /video ', function() {
+      expect($state.href('video', {})).to.equal('/video');
+    });
 
-    // it('should map state dashboard to url / ', function() {
-    //   expect($state.href('dashboard', {})).to.equal('/dashboard');
-    // });
+    it('should map /video route to video View template', function() {
+      expect($state.get('video').templateUrl).to.equal(view);
+    });
 
-    // it('should map /dashboard route to dashboard View template', function() {
-    //   expect($state.get('dashboard').templateUrl).to.equal(view);
-    // });
-
-    // it('of dashboard should work with $state.go', function() {
-    //   $state.go('dashboard');
-    //   $rootScope.$apply();
-    //   expect($state.is('dashboard'));
-    // });
+    it('of admin should work with $state.go', function() {
+      $state.go('video');
+      $rootScope.$apply();
+      expect($state.is('video'));
+    });
   });
 });

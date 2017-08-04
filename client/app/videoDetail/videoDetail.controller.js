@@ -8,13 +8,14 @@
   VideosController.$inject = ['$q', 'videosServices', 'logger', 'authService', '$state', '$scope'];
   /* @ngInject */
   function VideosController($q, videosServices, logger, authService, $state, $scope) {
+    /* perform variables and instances of view model */
     var vm = this;
     vm.news = {
       title: 'Video Portal',
       description: 'Videos Detail portal'
     };
     vm.messageCount = 0;
-    vm.title = 'Video';
+    vm.title = 'Detail';
     vm.getVideo = getVideo;
     vm.sessionId = authService.sessionId;
     vm.averageRate = averageRate;
@@ -22,12 +23,14 @@
 
     activate();
 
+    /* perform to activate view */
     function activate() {
       logger.info('Activated Video Detail View');
       vm.videoId = $state.params.videoId;
       validateSession();
     }
 
+    /* perform to validate session */
     function validateSession() {
       if(!authService.sessionId) {
         $state.go('home', {});
@@ -36,9 +39,11 @@
       }
     }
 
+    /* perform to get video detail by id */
     function getVideo() {
       var session = vm.sessionId;
       var videoId = vm.videoId;
+      // call to service pass parameters session id and video id
 			return videosServices.getVideoDetail(session, videoId).then(function (data) {
 			  if(data.status === 'success'){
           vm.video = data.data;
